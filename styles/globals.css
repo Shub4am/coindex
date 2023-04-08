@@ -1,27 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  scrollbar-width: thin;
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.active {
+  background-color: #2d3748;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.disabled {
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.previous,
+.next {
+  background-color: #edf2f7;
+  color: #2d3748;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }
