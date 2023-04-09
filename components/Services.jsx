@@ -6,19 +6,22 @@ import lockerImg from '../assets/images/locker.png';
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full mt-20">
+    <div
+      id="services"
+      className="flex flex-col justify-center items-center w-full mt-20"
+    >
       <div className="flex flex-col justify-center items-center">
-        <p className=" font-bold text-5xl leading-[60px] capitalize">
+        <p className=" font-bold text-xl sm:text-5xl leading-[60px] capitalize">
           Our directions and advantages
         </p>
-        <p className="font-normal text-2xl leading-[34px] text-center mt-6">
+        <p className="font-normal text-lg sm:text-2xl leading-[34px] text-center mt-6">
           Integrate once and never worry about scaling again. We ensure
           compatibility
           <br /> between ecosystem projects by maintaining a single global state
           as the network scales.
         </p>
       </div>
-      <div className="flex gap-10 mt-10">
+      <div className="sm:flex gap-10 mt-10">
         <Card
           imgSrc={walletImg}
           title="Powerful for developers"

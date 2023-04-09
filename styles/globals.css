@@ -31,10 +31,10 @@ body {
 }
 
 .active {
-  background-color: #2d3748;
+  background-color: #9609b6;
   color: white;
   border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .disabled {
@@ -48,4 +48,40 @@ body {
   color: #2d3748;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
+}
+
+/* scroll bar mozilla chrome etc. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9e00a3 #000000;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #9e00a3;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #9e00a3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #9e00a3;
 }

@@ -14,8 +14,11 @@ import coingeckoImage from '../assets/images/coingecko.png';
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-center items-center gap-10 p-5">
-        <div className="relative flex flex-col ml-40">
+      <div
+        id="footer"
+        className="sm:flex justify-center items-center gap-10 p-5"
+      >
+        <div className="relative flex flex-col justify-center items-center sm:items-start sm:ml-40">
           <div className="flex gap-6 mb-12">
             <Image src={instaIcon} alt="icons" />
             <Image src={twitterIcon} alt="icons" />
@@ -23,7 +26,7 @@ const Footer = () => {
             <Image src={facebookIcon} alt="icons" />
           </div>
 
-          <p className="font-normal text-2xl leading-[34px] mb-10">
+          <p className="font-normal text-lg  sm:text-2xl leading-[34px] mb-10">
             “The one who owns the information — <br />
             owns the world!”
           </p>
@@ -46,9 +49,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center ml-40">
+        <div className="flex justify-center items-center sm:ml-40">
           <form>
-            <p className="font-bold text-5xl leading-[60px] text-center">
+            <p className="font-bold text-2xl sm:text-5xl leading-[60px] text-center">
               Join our Community
             </p>
             <div className="flex flex-col gap-5 mt-5 ">
@@ -57,16 +60,18 @@ const Footer = () => {
                   <input
                     name="firstName"
                     type="text"
+                    maxLength="20"
                     placeholder="First Name"
-                    className="w-40 bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400"
+                    className="w-40 bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400 outline-none"
                   />
                 </label>
                 <label>
                   <input
                     name="lastName"
                     type="text"
+                    maxLength="20"
                     placeholder="Last Name"
-                    className="w-40 bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400"
+                    className="w-40 bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400 outline-none"
                   />
                 </label>
               </div>
@@ -76,15 +81,17 @@ const Footer = () => {
                   name="email"
                   type="email"
                   placeholder="Email"
-                  className="w-[360px] bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400"
+                  className="w-[360px] bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400 outline-none"
                 />
               </label>
-              <button
-                type="submit"
-                className=" bg-pinkBtn flex justify-center items-center p-4 gap-[10px] rounded-full w-[107px] h-[50px] mt-4"
-              >
-                Sign up
-              </button>
+              <div className="flex justify-center sm:justify-start items-center">
+                <button
+                  type="submit"
+                  className=" bg-pinkBtn  p-4 gap-[10px] rounded-full w-[107px] h-[50px] mt-4"
+                >
+                  Sign up
+                </button>
+              </div>
             </div>
           </form>
         </div>
@@ -100,7 +107,8 @@ const Footer = () => {
           Data provided by CoinGecko
         </p>
       </div>
-      <p className="font-bold text-base leading-5 text-center my-10">
+
+      <p className="font-bold text-base leading-5 text-center my-5">
         Cucoin© Copyright 2023. All rights reserved
       </p>
     </>

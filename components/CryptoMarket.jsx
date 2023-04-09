@@ -45,10 +45,10 @@ export default function CryptoMarket() {
     return (
       <>
         <div className="flex flex-row bg-gradient-to-r from-[#333399] to-[#ff00cc] py-2">
-          <div className="w-1/4 px-4">Coin</div>
-          <div className="w-1/4 px-4">Price</div>
-          <div className="w-1/4 px-4">24h Change</div>
-          <div className="w-1/4 px-4">Market Cap</div>
+          <div className="w-1/2 sm:w-1/4 px-4">Coin</div>
+          <div className="w-1/2 sm:w-1/4 px-4">Price</div>
+          <div className="hidden sm:flex  w-1/4 px-4">24h Change</div>
+          <div className="hidden sm:flex w-1/4 px-4">Market Cap</div>
         </div>
         <div className="flex justify-center items-center mt-5">
           Failed to load market update. Please try again in a few minutes
@@ -62,50 +62,36 @@ export default function CryptoMarket() {
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold mt-10 mb-6">Crypto Market Update</h1>
       </div>
-      {/* <div className="flex justify-center mb-10">
-        <div className="flex items-center mr-4">
-          <span className="mr-2">Sort by market cap:</span>
-          <button
-            className="text-gray-600 hover:text-gray-900"
-            onClick={() => setSortOrder('desc')}
-          >
-            <FaSortAmountDownAlt />
-          </button>
-          <button
-            className="text-gray-600 hover:text-gray-900"
-            onClick={() => setSortOrder('asc')}
-          >
-            <GrAscending />
-          </button>
-        </div>
-      </div> */}
       <div className="flex flex-col w-full mb-5">
         <div className="flex flex-row bg-gradient-to-r from-[#333399] to-[#ff00cc] py-5 text-2xl">
           <div className="w-1/4 px-4 ml-28">Coin</div>
           <div className="w-1/4 px-4">Price</div>
-          <div className="w-1/4 px-4">24h Change</div>
-          <div className="w-1/4 px-4">Market Cap</div>
+          <div className="w-1/4 px-4 hidden sm:block">24h Change</div>
+          <div className="w-1/4 px-4 hidden sm:block">Market Cap</div>
         </div>
         {pageCoins?.map((coin) => (
           <div
             key={coin.id}
             className="flex flex-row bg-black py-2 m-4 text-xl justify-center items-center"
           >
-            <div className="w-1/5 px-4 flex items-center">
+            <div className="w-1/5 px-4 flex text-base sm:text-2xl items-center">
               <Image
                 src={coin.image}
                 alt={coin.name}
-                width={24}
-                height={24}
+                width={30}
+                height={30}
                 className="mr-5"
               />
               {coin.name}
             </div>
-            <div className="w-1/4 px-4 text-center ">
+            <div className="w-1/2 sm:w-1/4 px-4 text-center  ml-12 sm:ml-0">
               {formatMoney(coin.current_price)}
             </div>
+
+            {/* hidden in mobile nav */}
+
             <div
-              className={`w-1/4 px-4  text-center  ${
+              className={`w-1/4 px-4 text-center hidden sm:block  ${
                 coin.price_change_percentage_24h > 0
                   ? 'text-green-500'
                   : 'text-red-500'
@@ -113,14 +99,15 @@ export default function CryptoMarket() {
             >
               {formatPercentage(coin.price_change_percentage_24h)}
             </div>
-            <div className="w-1/4 px-4 text-center ">
+
+            <div className="w-1/4 px-4 text-center  hidden sm:block">
               {formatMoney(coin.market_cap)}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-10 text-xl">
         <ReactPaginate
           previousLabel="Previous"
           nextLabel="Next"
