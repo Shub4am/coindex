@@ -72,9 +72,9 @@ export default function CryptoMarket() {
         {pageCoins?.map((coin) => (
           <div
             key={coin.id}
-            className="flex flex-row bg-black py-2 m-4 text-xl justify-center items-center"
+            className="flex flex-row bg-black py-2 m-4 text-xl justify-center items-center border-b-2 border-gray-900"
           >
-            <div className="w-1/5 px-4 flex text-base sm:text-2xl items-center">
+            <div className="w-1/5 px-4 flex text-base sm:text-xl items-center ">
               <Image
                 src={coin.image}
                 alt={coin.name}
