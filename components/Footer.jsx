@@ -81,7 +81,7 @@ const Footer = () => {
                   name="email"
                   type="email"
                   placeholder="Email"
-                  className="w-[360px] bg-transparent font-normal text-xl leading-[25px]  text-white capitalize border-b-2 border-gray-400 outline-none"
+                  className="w-[360px] bg-transparent font-normal text-xl leading-[25px]  text-white border-b-2 border-gray-400 outline-none"
                 />
               </label>
               <div className="flex justify-center sm:justify-start items-center">
