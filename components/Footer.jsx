@@ -1,17 +1,18 @@
-import React from 'react';
-import Image from 'next/image';
-import instaIcon from '../assets/icons/insta.png';
-import twitterIcon from '../assets/icons/twitter.png';
-import telegramIcon from '../assets/icons/telegram.png';
-import facebookIcon from '../assets/icons/facebook.png';
+import React from "react";
+import Image from "next/image";
+import instaIcon from "../assets/icons/insta.png";
+import twitterIcon from "../assets/icons/twitter.png";
+import telegramIcon from "../assets/icons/telegram.png";
+import facebookIcon from "../assets/icons/facebook.png";
 
-import gpsIcon from '../assets/icons/gps.png';
-import callIcon from '../assets/icons/contact.png';
-import mailIcon from '../assets/icons/mail.png';
+import gpsIcon from "../assets/icons/gps.png";
+import callIcon from "../assets/icons/contact.png";
+import mailIcon from "../assets/icons/mail.png";
 
-import coingeckoImage from '../assets/images/coingecko.png';
+import coingeckoImage from "../assets/images/coingecko.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div
@@ -109,7 +110,7 @@ const Footer = () => {
       </div>
 
       <p className="font-bold text-base leading-5 text-center my-5">
-        Cucoin© Copyright 2023. All rights reserved
+        ©Cucoin {currentYear}. All rights reserved
       </p>
     </>
   );

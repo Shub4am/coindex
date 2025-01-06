@@ -2,7 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['assets.coingecko.com'],
+    domains: ["assets.coingecko.com"],
+    remotePatterns: [
+      {
+        hostname: "coin-images.coingecko.com",
+      },
+    ],
   },
 };
 
