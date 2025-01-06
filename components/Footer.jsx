@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="flex gap-5 mb-8">
             <Image src={mailIcon} alt="icons" className="w-5 h-4" />
-            <p className="font-bold text-base leading-5">cucoin@crypto.com</p>
+            <p className="font-bold text-base leading-5">cucoin@crypto.xyz</p>
           </div>
         </div>
 
@@ -98,20 +98,20 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-10 gap-5 border-t-2 border-gray-500 border-opacity-40">
+      <div className="flex justify-between items-start gap-2 border-t-2 border-gray-500 border-opacity-40 text-center px-5 py-2">
+        <p className="font-bold text-base leading-5 text-center py-5 ">
+          Data provided by CoinGecko
+        </p>
         <Image
           src={coingeckoImage}
           alt="coingecko logo"
           className="w-40 h-10 mt-5"
         />
-        <p className="font-bold text-base leading-5 text-center">
-          Data provided by CoinGecko
+
+        <p className="font-bold text-base leading-5 text-center py-5">
+          ©Cucoin {currentYear}. All rights reserved
         </p>
       </div>
-
-      <p className="font-bold text-base leading-5 text-center my-5">
-        ©Cucoin {currentYear}. All rights reserved
-      </p>
     </>
   );
 };
