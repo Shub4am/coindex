@@ -33,7 +33,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="hidden sm:flex justify-center items-center gap-[10px] rounded-[56px] bg-[#FFFFFF14] text-pinkBtn py-3 px-6 capitalize hover:bg-pinkBtn hover:text-white mr-5">
+      <button className="hidden sm:flex justify-center items-center rounded-[56px] text-white bg-pinkBtn hover:bg-[#f0edef] py-3 px-6 capitalize hover:text-pinkBtn mr-5 duration-200">
         join us
       </button>
 
