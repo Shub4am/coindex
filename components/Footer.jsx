@@ -85,10 +85,10 @@ const Footer = () => {
                   className="w-[360px] bg-transparent font-normal text-xl leading-[25px]  text-white border-b-2 border-gray-400 outline-none"
                 />
               </label>
-              <div className="flex justify-center sm:justify-start items-center">
+              <div className="flex justify-center sm:justify-start items-center mt-4">
                 <button
-                  type="submit"
-                  className=" bg-pinkBtn  p-4 gap-[10px] rounded-full w-[107px] h-[50px] mt-4"
+                  type="button"
+                  className=" bg-pinkBtn text-center gap-[10px] rounded-full w-[107px] h-[50px] "
                 >
                   Sign up
                 </button>
