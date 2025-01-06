@@ -20,7 +20,8 @@ This project uses the Coingecko api one of the most popular cryptocurrency APIs.
 
 
 
-![coindex](https://user-images.githubusercontent.com/43783336/230799071-747cc024-f157-4159-8e16-af54c67ec726.png)
+<!-- ![coindex](https://user-images.githubusercontent.com/43783336/230799071-747cc024-f157-4159-8e16-af54c67ec726.png) --> 
+![coindex](https://github.com/user-attachments/assets/581100b0-a138-4ae3-b20b-c8bf4283961f)
 
 
 ### Website Design taken from [Figma Community](https://www.figma.com/community/file/1168507078135722049/crypto-website-ui-%7C-landing-page)
