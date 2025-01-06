@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import React, { useState } from "react";
+import Link from "next/link";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full shadow-xl flex justify-between items-center  z-40 border-b-[1px] border-solid border-gray-600 ease-in duration-300 bg-black">
+    <div className="fixed top-0 left-0 w-full shadow-xl flex justify-between items-center  z-40 border-b-[1px] border-solid border-gray-600 ease-in duration-300 bg-transparent backdrop-blur-xl drop-shadow-2xl">
       <div className="flex justify-start items-center p-5 w-2/4 ">
         <Link href="/" className="font-bold text-2xl leading-8 uppercase">
           cucoin
@@ -43,8 +43,8 @@ const Navbar = () => {
       <div
         className={
           navbar
-            ? 'sm:hidden absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-            : 'sm:hidden absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+            ? "sm:hidden absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+            : "sm:hidden absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
         }
       >
         <ul
